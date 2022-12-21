@@ -1,0 +1,108 @@
+main {
+    width: 100%;
+    height: auto;
+    position: absolute;
+
+    .form {
+        display: grid;
+        grid-template: 50% 50% / 1fr 1fr;
+        gap: 17px;
+        padding: 10px;
+        padding-top: 50px;
+        .form--btn {
+            grid-column: 1 / -1;
+            border-radius: 10px;
+            background: #0f2027;
+            background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            border: 1px solid #2c5364;
+        }
+
+        .form--input {
+            border-radius: 10px;
+            border: 1px solid #2c5364;
+            padding: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            background-color: transparent;
+        }
+    }
+
+    .meme {
+        position: relative;
+        height: auto;
+        margin-top: 3%;
+
+        .meme--image {
+            display: block;
+            margin: auto;
+            width: 50%;
+            height: auto;
+
+        }
+        .meme-text {
+            position: absolute;
+            color: white;
+            text-transform: uppercase;
+            width: 100%;
+            font-size: 20px;
+            text-shadow: 1px 1px 0px #2c5364;
+        }
+        .top {
+            top: 0%;
+            text-align: center;
+            padding-top: 2%;
+        }
+        .bottom {
+            position: absolute;
+            text-align: center;
+            bottom: 0%;
+            padding-bottom: 2%;
+        }
+    }
+}
+
+@media only screen and (max-width: 738px) {
+    main {
+        .meme {
+            .meme--image {
+                width: 70%;
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    main {
+        .meme {
+            .meme--image {
+                margin-top: 5%;
+            }
+        }
+        .form {
+            .form--input {
+                width: 90%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 983px) {
+    main {
+        .meme {
+            .meme--image {
+                width: 60%;
+                margin-top: 5%;
+            }
+        }
+        .form {
+            .form--input {
+                width: 90%;
+            }
+        }
+    }
+}
